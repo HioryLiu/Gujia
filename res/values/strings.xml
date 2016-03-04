@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gujia</string>
+    <string name="action_settings">Settings</string>
+    <string name="proInfo">我们为每个智能沙发配套了一个数据账户，您只需要扫描沙发上的二维码登录。/r 只要确保手机连接网络，您的账户将同步上传到账户，无论你在哪里都可以关注您家人的身体健康 </string>
+    <string name="clear_words">   为了测量的精确，请先离座并点击清零键后进行称重.</string>
+
+</resources>

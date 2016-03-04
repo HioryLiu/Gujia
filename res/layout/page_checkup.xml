@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/slight_blue"
+    tools:context="com.gujia.lhcw.checkup.CheckupAty" >
+
+    <include 
+        android:id="@id/rl_titlebar"
+         layout="@layout/include_titlebar" />
+    
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/btn_group"
+       android:layout_below="@id/rl_titlebar"
+       android:background="@drawable/background_circles_2" >
+       
+       <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="20dp"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="20dp"
+           android:layout_centerVertical="true"
+           android:orientation="vertical"
+           >
+           <RelativeLayout 
+               android:id="@+id/blood_pressure"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/icon_pressure"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_blood_pressure" />
+
+           <TextView
+               android:id="@+id/text_pressure"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="123/80" />
+
+           <TextView
+               android:id="@+id/text_danwei"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="mmHg" />
+
+           </RelativeLayout>
+           
+           <RelativeLayout 
+               android:id="@+id/heart_rate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/imageView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_heart_rate" />
+
+           <TextView
+               android:id="@+id/textView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="TextView" />
+
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="TextView" />
+
+           </RelativeLayout>
+           
+           <RelativeLayout 
+               android:id="@+id/blood_o2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/imageView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_blood_o2" />
+
+           <TextView
+               android:id="@+id/textView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="TextView" />
+
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="TextView" />
+
+           </RelativeLayout>
+           
+           <RelativeLayout 
+               android:id="@+id/body_temp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/imageView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_body_temp" />
+
+           <TextView
+               android:id="@+id/textView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="TextView" />
+
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="TextView" />
+
+           </RelativeLayout>
+       </LinearLayout>
+       
+   </RelativeLayout>
+   <RelativeLayout 
+       android:id="@+id/btn_group"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="10dp"
+       android:layout_centerHorizontal="true"
+       >
+      <Button 
+          android:id="@+id/btn_detail"
+          android:background="@drawable/image_small_button_left"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="详细结果"/>
+      <Button
+          android:id="@+id/btn_tendency" 
+          android:background="@drawable/image_small_button_right"
+          android:layout_toRightOf="@id/btn_detail"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="结果趋势"/>
+          
+   </RelativeLayout>
+
+    
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gujia.lhcw.lift.LiftControlAty" >
+
+    <include  
+        android:id="@+id/rl_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <RelativeLayout 
+        android:layout_below="@id/rl_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_circles_2">
+
+        <ImageView
+            android:id="@+id/big_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/background_big_circle" />
+
+        <ImageView
+            android:id="@+id/big_sofa_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/big_icon_sofa_control" />
+
+        <ImageView
+            android:id="@+id/sofa_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/big_circle"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/button_arrow_up" />
+
+        <ImageView
+            android:id="@+id/sofa_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/big_circle"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/button_arrow_down" />
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>
